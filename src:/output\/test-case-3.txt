@@ -1,0 +1,30 @@
+==================================================
+            STUDENT SEMESTER REPORT               
+==================================================
+
+Student ID          : STU101
+Student Name        : Ananya Rao
+Age                 : 20
+Course              : B.E/B.Tech
+
+--------------- ACADEMIC DETAILS -----------------
+Java Marks          : 35
+SQL Marks           : 35
+Aptitude Marks      : 35
+Total Marks         : 105/300
+Average             : 35.0
+Academic Result     : PASSED
+Grade               : D
+
+--------------- ATTENDANCE DETAILS ---------------
+Attendance          : 75.00%
+Attendance Status   : SUFFICIENT
+
+--------------- FEE DETAILS ---------------------
+Semester Fee        : ₹50000.0
+Fee Paid            : ₹50000.0
+Fee Balance         : ₹0.0
+Fee Status          : CLEARED
+
+----------------- FINAL STATUS --------------------
+Semester Status     : SEMESTER CLEARED

@@ -1,0 +1,33 @@
+==================================================
+            STUDENT SEMESTER REPORT               
+==================================================
+
+Student ID          : STU101
+Student Name        : Anaya Rao
+Age                 : 20
+Course              : B.E/B.Tech
+
+--------------- ACADEMIC DETAILS -----------------
+Java Marks          : 90
+SQL Marks           : 30
+Aptitude Marks      : 90
+Total Marks         : 210/300
+Average             : 70.0
+Academic Result     : FAILED
+Grade               : F
+
+--------------- ATTENDANCE DETAILS ---------------
+Attendance          : 85.00%
+Attendance Status   : SUFFICIENT
+
+--------------- FEE DETAILS ---------------------
+Semester Fee        : ₹50000.0
+Fee Paid            : ₹50000.0
+Fee Balance         : ₹0.0
+Fee Status          : CLEARED
+
+----------------- FINAL STATUS --------------------
+Semester Status     : SEMESTER NOT CLEARED
+
+Reasons: 
+- SQL marks are below 35.
