@@ -217,14 +217,7 @@ public class Main{
         }
         if(feebalance > 0){
             System.out.println("- Semester fee is pending.");
-        }
-
-      
-
-        
-     
-        
-        
+        }      
     }
 }
     
