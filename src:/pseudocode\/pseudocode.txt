@@ -1,0 +1,171 @@
+START
+
+DISPLAY "CAMPUSTRACK - Student Result Management System"
+
+INPUT StudentID
+INPUT StudentName
+
+INPUT Age
+WHILE Age < 16 OR Age > 30
+    DISPLAY "Invalid age. Enter age between 16 and 30"
+    INPUT Age
+END WHILE
+
+DISPLAY "Select Course"
+DISPLAY "1. BCA"
+DISPLAY "2. B.Sc Computer Science"
+DISPLAY "3. B.E/B.Tech"
+
+INPUT CourseChoice
+
+WHILE CourseChoice is not 1, 2, or 3
+    DISPLAY "Invalid course choice. Enter 1 to 3"
+    INPUT CourseChoice
+END WHILE
+
+INPUT JavaMarks
+WHILE JavaMarks < 0 OR JavaMarks > 100
+    DISPLAY "Invalid marks. Enter marks between 0 and 100"
+    INPUT JavaMarks
+END WHILE
+
+INPUT SQLMarks
+WHILE SQLMarks < 0 OR SQLMarks > 100
+    DISPLAY "Invalid marks. Enter marks between 0 and 100"
+    INPUT SQLMarks
+END WHILE
+
+INPUT AptitudeMarks
+WHILE AptitudeMarks < 0 OR AptitudeMarks > 100
+    DISPLAY "Invalid marks. Enter marks between 0 and 100"
+    INPUT AptitudeMarks
+END WHILE
+
+TotalMarks ← JavaMarks + SQLMarks + AptitudeMarks
+Average ← TotalMarks / 3
+
+IF JavaMarks ≥ 35 AND SQLMarks ≥ 35 AND AptitudeMarks ≥ 35 THEN
+    Result ← "PASSED"
+ELSE
+    Result ← "FAILED"
+END IF
+
+INPUT Attendance
+
+WHILE Attendance < 0 OR Attendance > 100
+    DISPLAY "Invalid attendance. Enter value between 0 and 100"
+    INPUT Attendance
+END WHILE
+
+IF Attendance ≥ 75 THEN
+    AttendanceStatus ← "SUFFICIENT"
+ELSE
+    AttendanceStatus ← "SHORTAGE"
+END IF
+
+SWITCH (CourseChoice)
+
+    CASE 1:
+        SemesterFee ← 30000
+
+    CASE 2:
+        SemesterFee ← 35000
+
+    CASE 3:
+        SemesterFee ← 50000
+
+END SWITCH
+
+INPUT FeePaid
+
+WHILE FeePaid < 0 OR FeePaid > SemesterFee
+    DISPLAY "Invalid fee amount"
+    INPUT FeePaid
+END WHILE
+
+FeeBalance ← SemesterFee - FeePaid
+
+IF FeeBalance = 0 THEN
+    FeeStatus ← "CLEARED"
+ELSE
+    FeeStatus ← "PENDING"
+END IF
+
+IF Result = "PASSED" AND Attendance ≥ 75 AND FeeBalance = 0 THEN
+    SemesterStatus ← "SEMESTER CLEARED"
+ELSE
+    SemesterStatus ← "SEMESTER NOT CLEARED"
+END IF
+
+DISPLAY "STUDENT SEMESTER REPORT"
+
+DISPLAY StudentID
+DISPLAY StudentName
+DISPLAY Age
+
+IF CourseChoice = 1 THEN
+    DISPLAY "BCA"
+ELSE IF CourseChoice = 2 THEN
+    DISPLAY "B.Sc Computer Science"
+ELSE
+    DISPLAY "B.E/B.Tech"
+END IF
+
+DISPLAY JavaMarks
+DISPLAY SQLMarks
+DISPLAY AptitudeMarks
+DISPLAY TotalMarks
+DISPLAY Average
+DISPLAY Result
+
+IF Result = "FAILED" THEN
+    Grade ← "F"
+ELSE IF Average ≥ 75 THEN
+    Grade ← "A"
+ELSE IF Average ≥ 60 THEN
+    Grade ← "B"
+ELSE IF Average ≥ 50 THEN
+    Grade ← "C"
+ELSE
+    Grade ← "D"
+END IF
+
+DISPLAY Grade
+
+DISPLAY Attendance
+DISPLAY AttendanceStatus
+
+DISPLAY SemesterFee
+DISPLAY FeePaid
+DISPLAY FeeBalance
+DISPLAY FeeStatus
+
+DISPLAY SemesterStatus
+
+IF SemesterStatus = "SEMESTER NOT CLEARED" THEN
+
+    DISPLAY "Reasons:"
+
+    IF JavaMarks < 35 THEN
+        DISPLAY "Java marks are below 35"
+    END IF
+
+    IF SQLMarks < 35 THEN
+        DISPLAY "SQL marks are below 35"
+    END IF
+
+    IF AptitudeMarks < 35 THEN
+        DISPLAY "Aptitude marks are below 35"
+    END IF
+
+    IF Attendance < 75 THEN
+        DISPLAY "Attendance is below 75%"
+    END IF
+
+    IF FeeBalance > 0 THEN
+        DISPLAY "Semester fee is pending"
+    END IF
+
+END IF
+
+STOP
