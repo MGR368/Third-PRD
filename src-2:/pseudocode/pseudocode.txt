@@ -1,0 +1,372 @@
+PSEUDOCODE for CampusTrack: Student Academic Management System
+
+START
+
+DISPLAY Welcome Screen
+
+INPUT StudentID
+INPUT Name
+
+INPUT Age
+WHILE Age <= 15 OR Age >= 35
+    DISPLAY "Invalid age. Enter age between 16 and 30"
+    INPUT Age
+END WHILE
+
+INPUT Email
+
+DISPLAY Course Menu
+    1. BCA
+    2. B.Sc Computer Science
+    3. B.E/B.Tech
+    4. MCA
+    5. Other
+
+INPUT CourseChoice
+
+WHILE CourseChoice NOT BETWEEN 1 AND 5
+    DISPLAY "Invalid course choice"
+    INPUT CourseChoice
+END WHILE
+
+INPUT Semester
+
+WHILE Semester NOT BETWEEN 1 AND 8
+    DISPLAY "Invalid semester"
+    INPUT Semester
+END WHILE
+
+CareerGoal ← "Become a Java backend developer"
+
+SET SemesterFee BASED ON CourseChoice
+
+    IF CourseChoice = 1
+        SemesterFee ← 35000
+    ELSE IF CourseChoice = 2
+        SemesterFee ← 30000
+    ELSE IF CourseChoice = 3
+        SemesterFee ← 50000
+    ELSE IF CourseChoice = 4
+        SemesterFee ← 45000
+    ELSE
+        SemesterFee ← 25000
+    END IF
+
+---------------------------------------------------
+ACADEMIC DETAILS
+---------------------------------------------------
+
+INPUT JavaMarks
+VALIDATE (0–100)
+
+INPUT SQLMarks
+VALIDATE (0–100)
+
+INPUT WebTechnologyMarks
+VALIDATE (0–100)
+
+INPUT AptitudeMarks
+VALIDATE (0–100)
+
+INPUT CommunicationMarks
+VALIDATE (0–100)
+
+TotalMarks ← JavaMarks + SQLMarks +
+              WebTechnologyMarks +
+              AptitudeMarks +
+              CommunicationMarks
+
+Percentage ← TotalMarks / 5
+
+IF JavaMarks ≥ 35 AND
+   SQLMarks ≥ 35 AND
+   WebTechnologyMarks ≥ 35 AND
+   AptitudeMarks ≥ 35 AND
+   CommunicationMarks ≥ 35 AND
+   Percentage ≥ 40
+THEN
+    Result ← "PASSED"
+ELSE
+    Result ← "FAILED"
+END IF
+
+---------------------------------------------------
+ATTENDANCE DETAILS
+---------------------------------------------------
+
+INPUT TotalClassesConducted
+
+WHILE TotalClassesConducted < 0 OR
+      TotalClassesConducted >= 300
+    DISPLAY "Invalid value"
+    INPUT TotalClassesConducted
+END WHILE
+
+INPUT ClassesAttended
+
+WHILE ClassesAttended < 0 OR
+      ClassesAttended >= TotalClassesConducted
+    DISPLAY "Invalid value"
+    INPUT ClassesAttended
+END WHILE
+
+Attendance ← (ClassesAttended /
+              TotalClassesConducted) × 100
+
+IF Attendance ≥ 75
+    AttendanceStatus ← "REGULAR"
+ELSE
+    AttendanceStatus ← "SHORTAGE"
+END IF
+
+---------------------------------------------------
+ASSIGNMENT SCORE PROCESSING
+---------------------------------------------------
+
+INPUT NumberOfAssignments
+
+TotalScore ← 0
+ValidCount ← 0
+
+FOR i ← 1 TO NumberOfAssignments
+
+    INPUT Score
+
+    IF Score = -1
+        EXIT LOOP
+    END IF
+
+    IF Score < -1 OR Score > 11
+        CONTINUE
+    ELSE
+        TotalScore ← TotalScore + Score
+        ValidCount ← ValidCount + 1
+    END IF
+
+END FOR
+
+IF ValidCount = 0
+    AssignmentAverage ← 0
+ELSE
+    AssignmentAverage ← TotalScore / ValidCount
+END IF
+
+IF ValidCount > 0 AND AssignmentAverage ≥ 5
+    AssignmentStatus ← "SATISFACTORY"
+ELSE
+    AssignmentStatus ← "NEEDS IMPROVEMENT"
+END IF
+
+---------------------------------------------------
+SCHOLARSHIP CALCULATION
+---------------------------------------------------
+
+Scholarship ← 0
+
+IF Result = "PASSED" AND
+   Percentage ≥ 85 AND
+   Attendance ≥ 80
+THEN
+    Scholarship ← 10
+
+ELSE IF Result = "PASSED" AND
+        Percentage ≥ 75 AND
+        Attendance ≥ 75
+THEN
+    Scholarship ← 5
+END IF
+
+ScholarshipAmount ←
+    (SemesterFee × Scholarship) / 100
+
+FinalPayableFee ←
+    SemesterFee - ScholarshipAmount
+
+---------------------------------------------------
+FEE PAYMENT
+---------------------------------------------------
+
+DISPLAY FinalPayableFee
+
+INPUT AmountPaid
+
+WHILE AmountPaid < 0 OR
+      AmountPaid > FinalPayableFee
+    DISPLAY "Invalid amount"
+    INPUT AmountPaid
+END WHILE
+
+FeeBalance ← FinalPayableFee - AmountPaid
+
+IF FeeBalance = 0
+    FeeStatus ← "PAID"
+ELSE
+    FeeStatus ← "PENDING"
+END IF
+
+---------------------------------------------------
+FINAL SEMESTER CLEARANCE
+---------------------------------------------------
+
+IF Result = "PASSED" AND
+   Attendance ≥ 75 AND
+   AssignmentStatus = "SATISFACTORY"
+THEN
+    FinalStatus ←
+    "CLEARED FOR NEXT SEMESTER"
+ELSE
+    FinalStatus ← "ACTION REQUIRED"
+END IF
+
+---------------------------------------------------
+PROCESS ANOTHER STUDENT
+---------------------------------------------------
+
+DO
+
+    DISPLAY "1. Yes"
+    DISPLAY "0. No"
+
+    INPUT Choice
+
+WHILE Choice ≠ 1 AND Choice ≠ 0
+
+IF Choice = 0
+    DISPLAY "Thank you for using CampusTrack"
+END IF
+
+---------------------------------------------------
+REPORT GENERATION
+---------------------------------------------------
+
+DISPLAY Student Details
+DISPLAY Course Name
+DISPLAY Semester
+DISPLAY Career Goal
+
+DISPLAY Academic Summary
+DISPLAY Marks
+DISPLAY Total Marks
+DISPLAY Percentage
+DISPLAY Result
+
+IF Result = "FAILED"
+    Grade ← F
+ELSE IF Percentage ≥ 85
+    Grade ← A+
+ELSE IF Percentage ≥ 75
+    Grade ← A
+ELSE IF Percentage ≥ 65
+    Grade ← B
+ELSE IF Percentage ≥ 50
+    Grade ← C
+ELSE
+    Grade ← D
+END IF
+
+DISPLAY Grade
+
+DISPLAY Attendance Summary
+DISPLAY Attendance Percentage
+DISPLAY Attendance Status
+
+DISPLAY Assignment Summary
+DISPLAY Valid Assignments
+DISPLAY Assignment Total
+DISPLAY Assignment Average
+DISPLAY Assignment Status
+
+DISPLAY Fee Summary
+DISPLAY Semester Fee
+DISPLAY Scholarship Percentage
+DISPLAY Scholarship Amount
+DISPLAY Final Payable Fee
+DISPLAY Amount Paid
+DISPLAY Fee Balance
+DISPLAY Fee Status
+
+DISPLAY Final Status
+
+---------------------------------------------------
+FAILED CONDITIONS
+---------------------------------------------------
+
+IF FinalStatus = "ACTION REQUIRED"
+    DISPLAY "Expected Failed Conditions"
+END IF
+
+IF JavaMarks < 35
+    DISPLAY "Java marks below 35"
+END IF
+
+IF SQLMarks < 35
+    DISPLAY "SQL marks below 35"
+END IF
+
+IF WebTechnologyMarks < 35
+    DISPLAY "Web Technology marks below 35"
+END IF
+
+IF AptitudeMarks < 35
+    DISPLAY "Aptitude marks below 35"
+END IF
+
+IF CommunicationMarks < 35
+    DISPLAY "Communication marks below 35"
+END IF
+
+IF Percentage < 40
+    DISPLAY "Percentage below 40%"
+END IF
+
+IF Attendance < 75
+    DISPLAY "Attendance below 75%"
+END IF
+
+IF AssignmentStatus =
+   "NEEDS IMPROVEMENT"
+    DISPLAY "Assignment performance poor"
+END IF
+
+IF FeeStatus = "PENDING"
+    DISPLAY "Fee payment pending"
+END IF
+
+IF FinalStatus =
+   "CLEARED FOR NEXT SEMESTER"
+    DISPLAY "Failed Conditions : None"
+END IF
+
+---------------------------------------------------
+RECOMMENDATIONS
+---------------------------------------------------
+
+IF Any Subject Mark < 35
+    DISPLAY "Revise failed subjects"
+END IF
+
+IF Percentage < 40
+    DISPLAY "Improve academic performance"
+END IF
+
+IF Attendance < 75
+    DISPLAY "Attend classes regularly"
+END IF
+
+IF AssignmentStatus =
+   "NEEDS IMPROVEMENT"
+    DISPLAY "Complete assignments regularly"
+END IF
+
+IF FeeStatus = "PENDING"
+    DISPLAY "Clear pending fee"
+END IF
+
+IF FinalStatus =
+   "CLEARED FOR NEXT SEMESTER"
+    DISPLAY "Maintain current performance"
+END IF
+
+DISPLAY End of Report
+
+STOP

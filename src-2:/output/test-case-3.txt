@@ -1,0 +1,55 @@
+Test Case 3: Exact boundary values
+
+========================================================
+                  STUDENT SEMESTER REPORT                
+========================================================
+
+Student ID                 : STU101
+Student Name               : Ananya Rao
+Age                        : 20
+Email                      : ananya@gmail.com
+Course                     : B.E/B.Tech
+Semester                   : 4
+Career Goal                : Become a Java backend developer
+
+---------------- ACADEMIC SUMMARY --------------------
+Java Marks                 : 40
+SQL Marks                  : 40
+Webtechnology Marks        : 40
+Aptitude Marks             : 40
+Communication Marks        : 40
+Total Marks                : 200/500
+Percentage                 : 40.00%
+Academic Result            : PASSED
+Grade                      : D
+
+---------------- ATTENDANCE SUMMARY ------------------
+Classes Conducted          : 100
+Classes Attended           : 75
+Attendance Percentage      : 75.00%
+Attendance Status          : REGULAR
+
+---------------- ASSIGNMENT SUMMARY ------------------
+Valid Assignments          : 3
+Assignment Total           : 15
+Assignment Average         : 5.00
+Assignment Status          : SATISFACTORY
+
+---------------- FEE SUMMARY -------------------------
+Base Semester Fee          : 50000.0
+Scholarship Percentage     : 0.0%
+Scholarship Amount         : 0.0
+Final Payable Fee          : 50000.0
+Amount Paid                : 50000.0
+Fee Balance                : 0.0
+Fee Status                 : PAID
+
+---------------- FINAL STATUS ------------------------
+Semester Clearance         : CLEARED FOR NEXT SEMESTER
+
+---------------- FAILED CONDITIONS -------------------
+Failed Conditions : None
+
+---------------- RECOMMENDATIONS ---------------------
+Maintain the current performance in the next semester.
+========================================================

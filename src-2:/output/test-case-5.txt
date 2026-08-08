@@ -1,0 +1,55 @@
+Test Case 5: Assignment continue and break
+
+========================================================
+                  STUDENT SEMESTER REPORT                
+========================================================
+
+Student ID                 : STU101
+Student Name               : Ananya Rao
+Age                        : 20
+Email                      : ananya@gmail.com
+Course                     : BCA
+Semester                   : 3
+Career Goal                : Become a Java backend developer
+
+---------------- ACADEMIC SUMMARY --------------------
+Java Marks                 : 70
+SQL Marks                  : 60
+Webtechnology Marks        : 89
+Aptitude Marks             : 80
+Communication Marks        : 96
+Total Marks                : 395/500
+Percentage                 : 79.00%
+Academic Result            : PASSED
+Grade                      : A
+
+---------------- ATTENDANCE SUMMARY ------------------
+Classes Conducted          : 120
+Classes Attended           : 110
+Attendance Percentage      : 91.67%
+Attendance Status          : REGULAR
+
+---------------- ASSIGNMENT SUMMARY ------------------
+Valid Assignments          : 2
+Assignment Total           : 14
+Assignment Average         : 7.00
+Assignment Status          : SATISFACTORY
+
+---------------- FEE SUMMARY -------------------------
+Base Semester Fee          : 35000.0
+Scholarship Percentage     : 5.0%
+Scholarship Amount         : 1750.0
+Final Payable Fee          : 33250.0
+Amount Paid                : 33250.0
+Fee Balance                : 0.0
+Fee Status                 : PAID
+
+---------------- FINAL STATUS ------------------------
+Semester Clearance         : CLEARED FOR NEXT SEMESTER
+
+---------------- FAILED CONDITIONS -------------------
+Failed Conditions : None
+
+---------------- RECOMMENDATIONS ---------------------
+Maintain the current performance in the next semester.
+========================================================

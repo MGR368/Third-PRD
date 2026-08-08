@@ -1,0 +1,58 @@
+Test Case 4: Attendance shortage and pending fee
+
+========================================================
+                  STUDENT SEMESTER REPORT                
+========================================================
+
+Student ID                 : STU101
+Student Name               : Ananya Rao
+Age                        : 20
+Email                      : ananya@gmail.com
+Course                     : B.E/B.Tech
+Semester                   : 4
+Career Goal                : Become a Java backend developer
+
+---------------- ACADEMIC SUMMARY --------------------
+Java Marks                 : 70
+SQL Marks                  : 70
+Webtechnology Marks        : 70
+Aptitude Marks             : 70
+Communication Marks        : 70
+Total Marks                : 350/500
+Percentage                 : 70.00%
+Academic Result            : PASSED
+Grade                      : B
+
+---------------- ATTENDANCE SUMMARY ------------------
+Classes Conducted          : 100
+Classes Attended           : 70
+Attendance Percentage      : 70.00%
+Attendance Status          : SHORTAGE
+
+---------------- ASSIGNMENT SUMMARY ------------------
+Valid Assignments          : 4
+Assignment Total           : 30
+Assignment Average         : 7.50
+Assignment Status          : SATISFACTORY
+
+---------------- FEE SUMMARY -------------------------
+Base Semester Fee          : 50000.0
+Scholarship Percentage     : 0.0%
+Scholarship Amount         : 0.0
+Final Payable Fee          : 50000.0
+Amount Paid                : 20000.0
+Fee Balance                : 30000.0
+Fee Status                 : PENDING
+
+---------------- FINAL STATUS ------------------------
+Semester Clearance         : ACTION REQUIRED
+
+---------------- FAILED CONDITIONS -------------------
+Expected failed conditions: 
+- attendance is below 75%.
+- semesterfee is PENDING.
+
+---------------- RECOMMENDATIONS ---------------------
+Attend classes regularly and clear the attendance shortage.
+Pay the pending semester fee before clearance.
+========================================================

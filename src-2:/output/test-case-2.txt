@@ -1,0 +1,56 @@
+Test Case 2: One subject failed despite a high percentage
+
+========================================================
+                  STUDENT SEMESTER REPORT                
+========================================================
+
+Student ID                 : STU101
+Student Name               : Ananya Rao
+Age                        : 20
+Email                      : ananya@gmail.com
+Course                     : B.E/B.Tech
+Semester                   : 4
+Career Goal                : Become a Java backend developer
+
+---------------- ACADEMIC SUMMARY --------------------
+Java Marks                 : 90
+SQL Marks                  : 90
+Webtechnology Marks        : 90
+Aptitude Marks             : 30
+Communication Marks        : 90
+Total Marks                : 390/500
+Percentage                 : 78.00%
+Academic Result            : FAILED
+Grade                      : F
+
+---------------- ATTENDANCE SUMMARY ------------------
+Classes Conducted          : 120
+Classes Attended           : 102
+Attendance Percentage      : 85.00%
+Attendance Status          : REGULAR
+
+---------------- ASSIGNMENT SUMMARY ------------------
+Valid Assignments          : 5
+Assignment Total           : 41
+Assignment Average         : 8.20
+Assignment Status          : SATISFACTORY
+
+---------------- FEE SUMMARY -------------------------
+Base Semester Fee          : 50000.0
+Scholarship Percentage     : 0.0%
+Scholarship Amount         : 0.0
+Final Payable Fee          : 50000.0
+Amount Paid                : 50000.0
+Fee Balance                : 0.0
+Fee Status                 : PAID
+
+---------------- FINAL STATUS ------------------------
+Semester Clearance         : ACTION REQUIRED
+
+---------------- FAILED CONDITIONS -------------------
+Expected failed conditions: 
+- aptitude marks are below 35.
+
+---------------- RECOMMENDATIONS ---------------------
+Revisit the failed subject and complete additional practice.
+========================================================

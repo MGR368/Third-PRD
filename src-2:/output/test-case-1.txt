@@ -1,0 +1,55 @@
+Test Case 1: All conditions passed
+
+========================================================
+                 STUDENT SEMESTER REPORT                
+========================================================
+
+Student ID                 : STU101
+Student Name               : Ananya Rao
+Age                        : 20
+Email                      : ananya@gmail.com
+Course                     : B.E/B.Tech
+Semester                   : 4
+Career Goal                : Become a Java backend developer
+
+---------------- ACADEMIC SUMMARY --------------------
+Java Marks                 : 88
+SQL Marks                  : 82
+Webtechnology Marks        : 79
+Aptitude Marks             : 76
+Communication Marks        : 80
+Total Marks                : 405/500
+Percentage                 : 81.00%
+Academic Result            : PASSED
+Grade                      : A
+
+---------------- ATTENDANCE SUMMARY ------------------
+Classes Conducted          : 120
+Classes Attended           : 102
+Attendance Percentage      : 85.00%
+Attendance Status          : REGULAR
+
+---------------- ASSIGNMENT SUMMARY ------------------
+Valid Assignments          : 5
+Assignment Total           : 41
+Assignment Average         : 8.20
+Assignment Status          : SATISFACTORY
+
+---------------- FEE SUMMARY -------------------------
+Base Semester Fee          : 50000.0
+Scholarship Percentage     : 5.0%
+Scholarship Amount         : 2500.0
+Final Payable Fee          : 47500.0
+Amount Paid                : 47500.0
+Fee Balance                : 0.0
+Fee Status                 : PAID
+
+---------------- FINAL STATUS ------------------------
+Semester Clearance         : CLEARED FOR NEXT SEMESTER
+
+---------------- FAILED CONDITIONS -------------------
+Failed Conditions : None
+
+---------------- RECOMMENDATIONS ---------------------
+Maintain the current performance in the next semester.
+========================================================
